@@ -33,18 +33,18 @@
         <div id="nav-links">
           <ul>
             <li class="nav-item">
-              <a href="#" class="nav-icon"><i class="fa fa-bars"></i></a>
+              <a href="#portfolio" class="nav-link">Portfolio</a>
             </li>
-
-            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <header>
-      <div class="container" style="width: 100%; text-align: center;">
+      <div class="container" style="width: 100%; text-align: center">
         <img
           id="profile-image"
           class="profile-image"
@@ -64,8 +64,7 @@
         <hr class="star-dark" />
         <i class="material-icons" id="star2">star</i>
 
-        <div id="portfolio-images" class="clearfix">
-        </div>
+        <div id="portfolio-images" class="clearfix"></div>
       </div>
     </section>
 
@@ -76,16 +75,30 @@
       <div id="about-text" class="clearfix">
         <div class="left">
           <p class="text">
-            Hi! I'm Berk Gündüz, a Computer Engineer and mobile application developer based in Ankara, Turkey. I'm passionate about creating mobile apps that are not only functional but also improve people's everyday lives. I primarily work with Flutter, focusing on building modern, fast, and user-friendly applications.
-            <br><br>
-            So far, I've developed various projects in areas such as education, personal finance, and task management. I use technologies like Firebase, GetX, Dart, and Flask to build efficient and maintainable applications. I pay close attention not just to how an app works under the hood, but also to how it feels and flows for the user.
+            Hi! I'm Berk Gündüz, a Computer Engineer and mobile application
+            developer based in Ankara, Turkey. I'm passionate about creating
+            mobile apps that are not only functional but also improve people's
+            everyday lives. I primarily work with Flutter, focusing on building
+            modern, fast, and user-friendly applications.
+            <br /><br />
+            So far, I've developed various projects in areas such as education,
+            personal finance, and task management. I use technologies like
+            Firebase, GetX, Dart, and Flask to build efficient and maintainable
+            applications. I pay close attention not just to how an app works
+            under the hood, but also to how it feels and flows for the user.
           </p>
         </div>
         <div class="right">
           <p class="text">
-            I care deeply about design, animation, and interaction. To me, good software isn't just about code—it's about crafting an experience that is intuitive, accessible, and visually appealing. That's why I emphasize UI/UX principles in every product I build.
-            <br><br>
-            My goal is to create digital solutions that bring real value to users. I enjoy learning new things, approaching problems creatively, and working collaboratively with others. For me, every project is both a contribution and an opportunity to grow.
+            I care deeply about design, animation, and interaction. To me, good
+            software isn't just about code—it's about crafting an experience
+            that is intuitive, accessible, and visually appealing. That's why I
+            emphasize UI/UX principles in every product I build.
+            <br /><br />
+            My goal is to create digital solutions that bring real value to
+            users. I enjoy learning new things, approaching problems creatively,
+            and working collaboratively with others. For me, every project is
+            both a contribution and an opportunity to grow.
           </p>
         </div>
       </div>
@@ -95,28 +108,46 @@
       <div class="container clearfix footer-centered">
         <div class="col">
           <h4 class="text-uppercase">Skills</h4>
-          <p>Flutter, Dart, Firebase, GetX, UI/UX, Mobile App Development, Animation, Design</p>
+          <p>
+            Flutter, Dart, Firebase, GetX, UI/UX, Mobile App Development,
+            Animation, Design
+          </p>
         </div>
         <div class="col">
           <h4 class="text-uppercase">Connect with Me</h4>
           <ul>
             <li>
-              <a href="https://twitter.com/" target="_blank" class="btn btn-outline btn-social">
+              <a
+                href="https://twitter.com/berkc_eng"
+                target="_blank"
+                class="btn btn-outline btn-social"
+              >
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="https://github.com/BerkCeng" target="_blank" class="btn btn-outline btn-social">
+              <a
+                href="https://github.com/BerkCeng"
+                target="_blank"
+                class="btn btn-outline btn-social"
+              >
                 <i class="fa fa-github fs32"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/berk-gunduz-dev" target="_blank" class="btn btn-outline btn-social">
+              <a
+                href="https://www.linkedin.com/in/berk-gunduz-dev"
+                target="_blank"
+                class="btn btn-outline btn-social"
+              >
                 <i class="fa fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="mailto:berkgunceng@gmail.com" class="btn btn-outline btn-social">
+              <a
+                href="mailto:berkgunceng@gmail.com"
+                class="btn btn-outline btn-social"
+              >
                 <i class="fa fa-envelope"></i>
               </a>
             </li>
@@ -127,21 +158,23 @@
 
     <div class="copyright clearfix">
       <div class="container">
-        <small>Copyright © Berk Gündüz 2024</small>
+        <small>Copyright © Berk Gündüz 2025</small>
       </div>
     </div>
     <script src="portfolio.js"></script>
     <script>
-      document.querySelector('.nav-icon').addEventListener('click', function() {
-        const navLinks = document.querySelector('#nav-links ul');
-        navLinks.classList.toggle('show');
-      });
+      document
+        .querySelector(".nav-icon")
+        .addEventListener("click", function () {
+          const navLinks = document.querySelector("#nav-links ul");
+          navLinks.classList.toggle("show");
+        });
 
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
           e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
           });
         });
       });
